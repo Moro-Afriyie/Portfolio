@@ -1,6 +1,5 @@
 import * as React from 'react';
 import Navbar from './Navbar';
-import Sidebar from './Sidebar';
 
 interface ILayoutProps {
 	children: React.ReactNode;
@@ -8,12 +7,14 @@ interface ILayoutProps {
 
 const Layout: React.FunctionComponent<ILayoutProps> = ({ children }) => {
 	return (
-		<div>
-			<Navbar />
-			<div className="sidebar">
+		<div className="h-screen flex">
+			<header className="header h-full overflow-y-auto w-[17.5rem]">
+				<Navbar />
+			</header>
+			{/* <aside className="sidebar h-full  border-red-900  overflow-y-auto w-[17.5rem]">
 				<Sidebar />
-			</div>
-			<main className="body">{children}</main>
+			</aside> */}
+			<main className="main h-full flex-1 overflow-y-auto">{children}</main>
 		</div>
 	);
 };

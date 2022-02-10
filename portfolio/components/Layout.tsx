@@ -8,7 +8,7 @@ interface ILayoutProps {
 const Layout: React.FunctionComponent<ILayoutProps> = ({ children }) => {
 	return (
 		<div className="h-screen flex">
-			<header className="header h-full overflow-y-auto w-[17.5rem]">
+			<header className="header h-full overflow-y-auto w-[17.5rem] bg-blue-gradient">
 				<Navbar />
 			</header>
 			{/* <aside className="sidebar h-full  border-red-900  overflow-y-auto w-[17.5rem]">

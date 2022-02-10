@@ -4,14 +4,14 @@ import profilePic from '../public/profile.jpg';
 
 const Navbar: React.FunctionComponent = () => {
 	return (
-		<div className="flex flex-col items-center">
+		<div className="flex flex-col items-center pt-4">
 			<h1 className="font- text-2xl text-center font-bold pt-4 capitalize">
 				<a href="#" className="">
 					Moro owusu Afriyie
 				</a>
 			</h1>
-			<div className="navbar-menu py-6 px-4 w-full flex col gap-3 items-center">
-				<div className="profile-section w-full flex flex-col gap-3 items-center">
+			<div className="navbar-menu py-6 px-4 w-full flex col gap-4 items-center">
+				<div className="profile-section w-full flex flex-col gap-4 items-center">
 					<Image
 						src={profilePic}
 						alt="profile picture"

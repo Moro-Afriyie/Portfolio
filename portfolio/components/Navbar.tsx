@@ -46,8 +46,42 @@ const Navbar: React.FunctionComponent = () => {
 						</li>
 					</ul>
 					<hr className=" h-px w-full border-white opacity-25" />
+					<ul className="navbar-nav my-4 w-full px-4 flex flex-col gap-3">
+						<li className="nav-item">
+							<a href="#" className="nav-item-link">
+								<i className="fa fa-user" aria-hidden="true"></i>
+								<p>About me</p>
+							</a>
+						</li>
+						<li className="nav-item">
+							<a href="#" className="nav-item-link">
+								<i className="fa fa-laptop" aria-hidden="true"></i>
+								<p>Portfolio</p>
+							</a>
+						</li>
+						<li className="nav-item">
+							<a href="#" className="nav-item-link">
+								<i className="fa fa-file-text" aria-hidden="true"></i>
+								<p>Resume</p>
+							</a>
+						</li>
+						<li className="nav-item">
+							<a href="#" className="nav-item-link">
+								<i className="fa fa-envelope" aria-hidden="true"></i>
+								<p>contact</p>
+							</a>
+						</li>
+					</ul>
+					<div className="">
+						<a
+							href="#"
+							className="py-2 px-4 rounded cursor-pointer bg-hire  flex items-center capitalize gap-2 text-white"
+						>
+							<i className="fa fa-paper-plane" aria-hidden="true"></i>
+							<p>hire me</p>
+						</a>
+					</div>
 				</div>
-				<div className="navbar-nav"></div>
 			</div>
 		</div>
 	);

@@ -7,3 +7,6 @@
 .list-item {
 	@apply bg-white text-cyan-600 flex items-center justify-center w-10 h-10 text-xl rounded-full;
 }
+.nav-item-link {
+	@apply flex gap-2  p-2 items-center capitalize font-bold;
+}
